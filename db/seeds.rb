@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Card.destroy_all
+Deck.destroy_all
 
 deck1 = Deck.create()
-deck2 = Deck.create()
+deck1.build_deck
