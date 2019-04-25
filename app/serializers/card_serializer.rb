@@ -1,3 +1,3 @@
 class CardSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :rank, :suit, :id
 end

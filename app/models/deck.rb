@@ -2,8 +2,8 @@ class Deck < ApplicationRecord
   has_many :cards
 
   def build_deck
-    @suits = ['♣', '♥', '♠', '♦']
-    @ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+    @suits = ['club', 'heart', 'spade', 'diamond']
+    @ranks = [*(2..10), 'J', 'Q', 'K', 'A']
     @cards = []
 
     #Iterating over each suit and rank to create all the cards

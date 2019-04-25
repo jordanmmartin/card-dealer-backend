@@ -1,4 +1,7 @@
 class DeckSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :remaining
   has_many :cards
+  def remaining
+    object.cards.count
+  end
 end
