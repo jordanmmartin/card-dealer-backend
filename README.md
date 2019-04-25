@@ -1,24 +1,4 @@
-# README
+# Card Dealer
+> Card Dealer is a single page web app that displays 5 random cards from a standard 52 card deck.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This the backend of this project, for information, installation instructions, and more, check out the [frontend](https://github.com/jordanmmartin/card-dealer-frontend).
