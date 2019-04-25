@@ -1,5 +1,12 @@
 class DecksController < ApplicationController
-  before_action :set_deck, only: [:show, :update, :destroy]
+  before_action :set_deck, only: [:show, :update, :destroy, :deal]
+
+  # GET /decks/:id/deal
+  def deal
+    @cards = @deck.cards.shuffle
+    @hand = @cards.shift(5)
+    render json: @hand
+  end
 
   # GET /decks
   def index
