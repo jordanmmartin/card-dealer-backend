@@ -22,9 +22,9 @@ class DecksController < ApplicationController
 
   # POST /decks
   def create
-    @deck = Deck.new(deck_params)
-
-    if @deck.save
+    @deck = Deck.create()
+    @deck.build_deck
+    if @deck.valid?
       render json: @deck, status: :created, location: @deck
     else
       render json: @deck.errors, status: :unprocessable_entity
