@@ -2,7 +2,7 @@ class Deck < ApplicationRecord
   has_many :cards
 
   def build_deck
-    @suits = ['clubs', 'hearts', 'spades', 'diams']
+    @suits = ['clubs', 'hearts', 'spades', 'diamonds']
     @ranks = [*(2..10), 'J', 'Q', 'K', 'A']
     @cards = []
 
